@@ -6,7 +6,7 @@
   "scripts": {
     "build-docs": "rm -rf docs;./node_modules/.bin/jsdoc -r --template ./tutorials/ ./lib/",
     "build-gh-pages": "git checkout gh-pages; git merge master --no-edit; npm run build-docs; npm test; git add .; git commit -m 'rebuilt docs, tests.'; git push; git checkout master",
-    "build-watch": "webpack --output-library=canvasDatagrid --output-library-target=umd  --watch -d --entry=./lib/main.js --output-path=./dist --output-filename=canvas-datagrid.debug.js --devtool source-map --output-source-map-filename='canvas-datagrid.debug.map'",
+    "build-watch": "webpack-dev-server --output-library=canvasDatagrid --output-library-target=umd  --watch -d --entry=./lib/main.js --output-path=./dist --output-filename=canvas-datagrid.debug.js --devtool source-map --output-source-map-filename='canvas-datagrid.debug.map'",
     "build-dev": "webpack --output-library=canvasDatagrid --output-library-target=umd  -d --entry=./lib/main.js --output-path=./dist --output-filename=canvas-datagrid.debug.js --devtool source-map --output-source-map-filename='canvas-datagrid.debug.map'",
     "test": "npm run build-instrument;npm run build-pack-instrument;npm run build-run-test;npm run build-run-report",
     "lint": "eslint -c .eslintrc.js lib",
@@ -79,12 +79,14 @@
     "mocha-phantomjs": "^4.1.0",
     "mocha-phantomjs-core": "^2.1.2",
     "mocha-phantomjs-istanbul": "0.0.2",
+    "npm-run-all": "^4.1.5",
     "phantomjs": "^2.1.7",
     "semantic-release": "^15.13.18",
     "should": "^11.2.1",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "release": {
     "verifyConditions": [

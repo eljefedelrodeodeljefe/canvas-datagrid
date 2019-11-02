@@ -19,5 +19,20 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    contentBase: [
+      path.join(__dirname, 'tutorials')
+      // path.join(__dirname, 'dist'),
+      // path.join(__dirname, 'docs'),
+    ],
+    proxy: {
+      // '/docs': {
+      //   target: path.join(__dirname, 'docs'),
+      //   pathRewrite: { '^/docs': '' }
+      // }
+    },
+    // compress: true,
+    port: 9000
   }
 }
