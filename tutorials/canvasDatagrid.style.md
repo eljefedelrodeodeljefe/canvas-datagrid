@@ -25,7 +25,7 @@ When using standard CSS, style names are hyphenated, lower case, and prefixed wi
     <canvas-datagrid style="--cdg-grid-background-color: red;">[{"my": "data"}]</canvas-datagrid>
 
 When using the web component you can also use CSS classes and selectors as you would a native HTML element.
-    
+
     <style>
         .my-grid {
             --cdg-grid-background-color: red;
