@@ -4,7 +4,9 @@ module.exports = {
   entry: './lib/main.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    library: 'canvasDatagrid',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [

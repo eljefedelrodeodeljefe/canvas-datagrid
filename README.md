@@ -1,19 +1,17 @@
-canvas-datagrid
----------------
+# canvas-datagrid
 
-[Demo](https://tonygermaneri.github.io/canvas-datagrid/tutorials/demo.html) - City of Chicago government employee list.  Thanks to [data.gov](https://www.data.gov/).
+[Demo](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/demo.html) - City of Chicago government employee list.  Thanks to [data.gov](https://www.data.gov/).
 
-![canvas-datagrid](https://tonygermaneri.github.io/canvas-datagrid/images/datagrid1.png)
+![canvas-datagrid](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/images/datagrid1.png)
 
-[![Coverage Status](https://coveralls.io/repos/github/TonyGermaneri/canvas-datagrid/badge.svg?branch=master&build=1640)](https://coveralls.io/github/TonyGermaneri/canvas-datagrid?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/eljefedelrodeodeljefe/canvas-datagrid/badge.svg?branch=master&build=1640)](https://coveralls.io/github/eljefedelrodeodeljefe/canvas-datagrid?branch=master)
 [![NPM](https://img.shields.io/npm/v/canvas-datagrid.svg)](https://www.npmjs.com/package/canvas-datagrid)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/TonyGermaneri/canvas-datagrid)
-
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/eljefedelrodeodeljefe/canvas-datagrid)
 
 * Works with Firefox, IE11, Edge, Safari and Chrome.
 * Native support for touch devices (phones and tablets).
-* Rich [documentation](https://tonygermaneri.github.io/canvas-datagrid/docs/), [tutorials](https://tonygermaneri.github.io/canvas-datagrid/docs/index.html#tutorials), and [slack support](https://canvas-datagrid.slack.com/).
+* Rich [documentation](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/docs/), [tutorials](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/docs/index.html#tutorials).
 * Single canvas element, drawn in immediate mode, data size does not impact performance.
 * Support for unlimited rows and columns without paging or loading.
 * Rich API of events, methods and properties using the familiar W3C DOM interface.
@@ -25,33 +23,23 @@ canvas-datagrid
 * Per-user styles, column sizes, row sizes, view preferences and settings using localStorage.
 * Very small file size, no dependencies.
 
-[Documentation](https://tonygermaneri.github.io/canvas-datagrid/docs/)
-
-[Tutorials](https://tonygermaneri.github.io/canvas-datagrid/docs/index.html#tutorials)
-
+[Documentation](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/docs/)
+[Tutorials](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/docs/index.html#tutorials)
 [Slack Support](https://canvas-datagrid.slack.com/) (message author for invite)
+[Style Builder](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/styleBuilder.html)
+[Download latest version (minified)](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/dist/canvas-datagrid.js)
+[Tests](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/test/tests.html)
+[Source Code](https://github.com/eljefedelrodeodeljefe/canvas-datagrid)
+[Latest Test Coverage](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/build/report/lcov-report/index.html)
+[Coveralls](https://coveralls.io/github/eljefedelrodeodeljefe/canvas-datagrid)
 
-[Style Builder](https://tonygermaneri.github.io/canvas-datagrid/tutorials/styleBuilder.html)
-
-[Download latest version (minified)](https://tonygermaneri.github.io/canvas-datagrid/dist/canvas-datagrid.js)
-
-[Tests](https://tonygermaneri.github.io/canvas-datagrid/test/tests.html)
-
-[Source Code](https://github.com/TonyGermaneri/canvas-datagrid)
-
-[Latest Test Coverage](https://tonygermaneri.github.io/canvas-datagrid/build/report/lcov-report/index.html)
-
-[Coveralls](https://coveralls.io/github/TonyGermaneri/canvas-datagrid)
-
-Installation
-------------
+## Installation
 
 With [npm](https://www.npmjs.com/package/canvas-datagrid)
 
 ```console
-npm install canvas-datagrid
+npm install canvas-datagrid -D
 ```
-
 
 Place the single source file `./dist/canvas-datagrid.js` in your web page using a script tag that points to the source or use webpack.
 
@@ -67,17 +55,15 @@ Alternatively, instead of downloading and installing, you can link directly to a
 
 A function will be added to the global scope of the web page called `canvasDatagrid` as well as module loader definitions.
 
-Getting started
----------------
+## Getting started
 
-Works [with webpack](https://tonygermaneri.github.io/canvas-datagrid/tutorials/amdDemo.html), [without webpack](https://tonygermaneri.github.io/canvas-datagrid/tutorials/demo.html) or as a [web component](https://tonygermaneri.github.io/canvas-datagrid/tutorials/webcomponentDemo.html).
+Works [with webpack](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/amdDemo.html), [without webpack](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/demo.html) or as a [web component](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/webcomponentDemo.html).
 No matter how you load it, `canvasDatagrid` is declared in the global scope.
 
-Canvas-datagrid is a [Web Component](https://www.webcomponents.org/element/TonyGermaneri/canvas-datagrid) when
+Canvas-datagrid is a [Web Component](https://www.webcomponents.org/element/eljefedelrodeodeljefe/canvas-datagrid) when
 in a compatible browser, otherwise it is a `<canvas>` tag.
 
-Using pure JavaScript
----------------------
+### Using pure JavaScript
 
 ```js
 var grid = canvasDatagrid();
@@ -88,20 +74,7 @@ grid.data = [
 ];
 ```
 
-
-Using Web Component
--------------------
-
-<!--
-```
-<custom-element-demo>
-  <template>
-    <script src="https://tonygermaneri.github.io/canvas-datagrid/dist/canvas-datagrid.debug.js"></script>
-    <div style="height: 300px;"><next-code-block></next-code-block></div>
-  </template>
-</custom-element-demo>
-```
--->
+### Using Web Component
 
 ```html
 <canvas-datagrid class="myGridStyle" data="data can go here too">[
@@ -120,63 +93,68 @@ grid.data = [
 ];
 ```
 
-
-Using Vue
----------
+### Using Vue
 
 ```vue
 <canvas-datagrid :data.prop="[{"col1": "row 1 column 1"}]"></canvas-datagrid>
 ```
 
+### More Demos
 
-More Demos
-----------
-
-* [Using Vue](https://tonygermaneri.github.io/canvas-datagrid/tutorials/vueExample.html)
-
-* [Using Webpack3: AMD](https://tonygermaneri.github.io/canvas-datagrid/tutorials/amdDemo.html)
-
-* [Using React](https://tonygermaneri.github.io/canvas-datagrid/tutorials/reactExample.html)
-
-* [Web component example](https://tonygermaneri.github.io/canvas-datagrid/tutorials/webcomponentDemo.html)
-
-* [Loading data with XHR](https://tonygermaneri.github.io/canvas-datagrid/tutorials/demo.html)
-
-* [Sparkline example](https://tonygermaneri.github.io/canvas-datagrid/tutorials/sparklineDemo.html)
-
-* [XHR data paging demo Jeopardy Questions API](https://tonygermaneri.github.io/canvas-datagrid/tutorials/xhrPagingDemo.html)
+* [Using Vue](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/vueExample.html)
+* [Using Webpack3: AMD](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/amdDemo.html)
+* [Using React](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/reactExample.html)
+* [Web component example](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/webcomponentDemo.html)
+* [Loading data with XHR](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/demo.html)
+* [Sparkline example](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/sparklineDemo.html)
+* [XHR data paging demo Jeopardy Questions API](https://eljefedelrodeodeljefe.github.io/canvas-datagrid/tutorials/xhrPagingDemo.html)
 
 Note about XHR paging demo: Thanks to [jservice](http://jservice.io/) for the use of the free paging API.  You must "load unsafe scripts" or relevant command to allow HTTPS (github) to make XHR requests to HTTP (Jeopardy Questions API).  There is nothing unsafe about this.
 
-Building & Testing
-------------------
+## Building & Testing
 
 To install development dependencies.  Required to build or test.
 
-    npm install
+```bash
+npm install
+```
 
 To build production and debug versions.
 
-    npm run build-all
+```bash
+npm run build-all
+```
 
 To build production version.
 
-    npm run build-prd
+```bash
+npm run build-prd
+```
 
 To build debug version.
 
-    npm run build-dev
+```bash
+npm run build-dev
+```
 
 To build debug version anytime a file in ./lib changes.
 
-    npm run build-watch
+```bash
+npm run build-watch
+```
 
 To build documentation.
 
-    npm run build-docs
+```bash
+npm run build-docs
+```
 
 To run tests. Note: Headless tests will mostly fail due to lack of headless canvas pixel detection support.  Use VM testing or your browser.
 
-    npm test
+```bash
+npm test
+```
 
+## License
 
+See [License](LICENSE)
