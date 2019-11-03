@@ -17,9 +17,6 @@ cache:
 install:
   - npm ci
 
-script:
-  - npm test
-
 jobs:
   include:
     - stage: test
