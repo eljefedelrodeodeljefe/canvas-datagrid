@@ -8,6 +8,7 @@
 [![NPM](https://img.shields.io/npm/v/canvas-datagrid.svg)](https://www.npmjs.com/package/canvas-datagrid)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/eljefedelrodeodeljefe/canvas-datagrid)
+[![Build Status](https://travis-ci.org/eljefedelrodeodeljefe/canvas-datagrid.svg?branch=master)](https://travis-ci.org/eljefedelrodeodeljefe/canvas-datagrid)
 
 * Works with Firefox, IE11, Edge, Safari and Chrome.
 * Native support for touch devices (phones and tablets).
