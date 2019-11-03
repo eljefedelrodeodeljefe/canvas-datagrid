@@ -1,0 +1,34 @@
+language: node_js
+node_js:
+  - 12
+dist: trusty
+sudo: false
+addons:
+  chrome: stable
+
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+
+cache:
+  npm: true
+  directories:
+    - node_modules
+
+install:
+  - npm ci
+
+script:
+  - npm test
+
+jobs:
+  include:
+    - stage: test
+      script: npm test
+    - stage: build
+      script: npm run build
+
+deploy:
+  provider: script
+  script: npm run semantic-release
+  on:
+    branch: master
