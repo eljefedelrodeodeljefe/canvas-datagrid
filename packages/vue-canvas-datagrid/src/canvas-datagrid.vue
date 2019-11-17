@@ -38,6 +38,9 @@ export default {
       data: this.tableData
     })
 
+    this.$options.canvasDatagrid.style.height = '100%'
+    this.$options.canvasDatagrid.style.width = '100%'
+
     this.$options.canvasDatagrid.attach()
   }
 }
