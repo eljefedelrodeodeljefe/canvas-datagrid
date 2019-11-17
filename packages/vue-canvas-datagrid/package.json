@@ -16,6 +16,7 @@
   },
   "files": [
     "dist/**/*",
+    "src/**/*",
     "package.json",
     "package-lock.json",
     "README.md"
