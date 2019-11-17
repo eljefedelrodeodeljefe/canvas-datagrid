@@ -33,5 +33,6 @@
     "eslint-plugin-vue": "^5.0.0",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "gitHead": "d2f05f5d95662ab8602cc24c56f30cab7887a99a"
 }
