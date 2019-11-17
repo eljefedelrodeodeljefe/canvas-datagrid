@@ -23,7 +23,7 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "lerna publish"
+    "release": "lerna run build && lerna publish"
   },
   "repository": {
     "type": "git",
