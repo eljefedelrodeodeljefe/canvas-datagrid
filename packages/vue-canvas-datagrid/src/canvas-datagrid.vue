@@ -10,27 +10,35 @@
 import { GridProvider as CanvasDatagrid } from '../../../lib/main.js'
 
 export default {
-  name: 'app',
+  name: 'VueCanvasDatagrid',
+  props: {
+    value: {
+      type: [Array, Object],
+      required: false,
+      default: undefined
+    }
+  },
   components: {
 
   },
+  computed: {
+    tableData: {
+      get () {
+        return this.value
+      },
+      set () {
+
+      }
+    }
+  },
   canvasDatagrid: null,
   mounted () {
-    console.log('==============================')
-    console.log(this.$refs.target)
-    console.log('==============================')
-    this.$options.canvasDatagrid = new CanvasDatagrid({ parentNode: this.$refs.target,
-      data: [
-        { col1: 'foo', col2: 0, col3: 'a' },
-        { col1: 'bar', col2: 1, col3: 'b' },
-        { col1: 'baz', col2: 2, col3: 'c' }
-      ] })
+    this.$options.canvasDatagrid = new CanvasDatagrid({
+      parentNode: this.$refs.target,
+      data: this.tableData
+    })
 
     this.$options.canvasDatagrid.attach()
-
-    console.log('==============================')
-    console.log(this.$options.canvasDatagrid)
-    console.log('==============================')
   }
 }
 </script>
