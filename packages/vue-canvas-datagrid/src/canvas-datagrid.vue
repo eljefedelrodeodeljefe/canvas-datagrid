@@ -35,11 +35,10 @@ export default {
   mounted () {
     this.$options.canvasDatagrid = new CanvasDatagrid({
       parentNode: this.$refs.target,
-      data: this.tableData
+      data: this.tableData,
+      height: '100%',
+      width: '100%'
     })
-
-    this.$options.canvasDatagrid.style.height = '100%'
-    this.$options.canvasDatagrid.style.width = '100%'
 
     this.$options.canvasDatagrid.attach()
   }
