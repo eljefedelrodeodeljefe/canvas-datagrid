@@ -1,6 +1,6 @@
 {
   "name": "@eljefedelrodeo/vue-canvas-datagrid",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "private": false,
   "main": "dist/canvas-datagrid.umd.js",
   "module": "dist/canvas-datagrid.esm.js",
