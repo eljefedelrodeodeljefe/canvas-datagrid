@@ -44,7 +44,9 @@ export default {
 </script>
 
 <style>
-.canvas-datagrid {
+.canvas-datagrid,
+.canvas-target {
+  display: block;
   width: 100%;
   height: 100%;
 }
