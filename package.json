@@ -79,7 +79,7 @@
     "istanbul": "^0.4.5",
     "jsdoc": "^3.4.3",
     "lerna": "^3.18.4",
-    "marked": "^0.3.6",
+    "marked": "^4.0.10",
     "mocha": "^3.5.0",
     "mocha-phantomjs": "^4.1.0",
     "mocha-phantomjs-core": "^2.1.2",
